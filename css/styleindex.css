@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Larky;
+    src: url(/posters_panic_te25B/misc/super-larky-font/SuperLarky-nALLR.ttf);
+}
+
+
+body{
+    margin: 0;
+}
+
+#mainpage{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-areas: 
+    'hd hd hd'
+    'as1 sc as2';
+    grid-template-rows: 12.5vh 87.5vh;
+    grid-template-columns: 10% 80% 10%;
+    margin: 0;
+}
+
+#mainpageheader{
+    background-color: rgba(244, 190, 50, 1);
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px gray;
+}
+
+#mainpagesection{
+    grid-area: sc;
+    display: grid;
+    grid-template-areas: 
+    'article'
+    'section';
+    grid-template-rows: 1fr 2fr;
+    margin: 10px;
+}
+
+#logo{
+    width: 5%;
+    padding: 75px;
+}
+
+#menubutton{
+    width: 30%;
+}
+
+#mainpageaside1{
+    grid-area: as1;
+    background-color: rgb(244, 52, 203);
+    z-index: -1;
+}
+
+#mainpageaside2{
+    grid-area: as2;
+    background-color: rgb(244, 52, 203);
+    z-index: -1;
+}
+
+h1{
+    font-family: Larky;
+}
+
+#articleindex{
+    grid-area: article;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+    border-radius: 5px;
+}
+
+p{
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#mainpageflexsection{
+    display: grid;
+    grid-area: section;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    grid-template-areas: 
+    'img1 img2 img3 img4 as3'
+    'img5 img6 img7 img8 as3';
+    grid-template-columns: 22% 22% 22% 22% 12%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#mainpageflexsection div{
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.205);
+    background-size: 65%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+#img1{
+    grid-area: img1;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+}
+#img2{
+    grid-area: img2;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img2.avif);
+}
+#img3{
+    grid-area: img3;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/poster3.png);
+}
+#img4{
+    grid-area: img4;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+}
+#img5{
+    grid-area: img5;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+}
+#img6{
+    grid-area: img6;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+}
+#img7{
+    grid-area: img7;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+}
+#img8{
+    grid-area: img8;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+}
+#img8{
+    grid-area: img8;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+ }
+#img8{
+    grid-area: img8;
+    margin: 10px;
+    background-image: url(/posters_panic_te25B/img/img1.jpg);
+    }
+
+
+#flexsectionscrollbar{
+    grid-area: as3;
+    background: url(/posters_panic_te25B/img/patternfunny.avif);
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#mainpageflexsection div:hover{
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+}
